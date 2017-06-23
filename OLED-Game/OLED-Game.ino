@@ -60,7 +60,6 @@ void setupScreen()   {
 }
 void loop() {
    Run();
-   //Snake();
 }
 
 
@@ -81,9 +80,9 @@ void Run(){
     if (!time > 500000)time *= 1+time/200000; else time *= 1+time/200000;
     score = time/100;
     int jumP;
-    
+
+    //dont even bother trying to read this
     if (started){
-      
       jumP = jump(pressed&&started2&&time>300,35,1.6);
       if (started2&&time<300)display.drawBitmap(30, 48,  player, 16, 16, 1);
       int move = 128-((int(time/7)))%144;
@@ -149,4 +148,3 @@ void diedtxt(void) {
   display.display();
   
 }
-
