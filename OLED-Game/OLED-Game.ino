@@ -131,7 +131,7 @@ int jump(boolean trigjump,float height,float speed){
     if (jumping){
       float jump = height * (float)sin(((PI*2)/1000)*(time/2));
       return jump;
-    }
+    }//else return 0;
   }
 
 void diedtxt(void) {
