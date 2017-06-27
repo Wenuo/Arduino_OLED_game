@@ -293,7 +293,7 @@ void Run(){
       //draws score to screen
       display.println(score);
     }else{
-      //draws stars screen
+      //draws start screen
       display.setTextSize(2);
       display.setTextColor(WHITE);
       display.setCursor(40,0);
